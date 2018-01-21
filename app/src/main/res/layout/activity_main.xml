@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.phanindharreddyv.myapplication.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:text="this is my beautiful bird"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:layout_below="@+id/iv_bird"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/llhorizontal"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:text="Button 1"
+        android:gravity="center"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3" />
+
+
+
+    <Button
+        android:text="Button 2"
+        android:gravity="center"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/llhorizontal"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/llvertical"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="Button 1"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:id="@+id/button1" />
+
+
+
+        <Button
+            android:text="Button 2"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:id="@+id/button2" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_bird"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bird"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
